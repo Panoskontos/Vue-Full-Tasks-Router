@@ -4,6 +4,7 @@ import HomeComponent from '../views/HomeComponent.vue'
 import UsersComponent from '../views/UsersComponent.vue'
 import SettingsComponent from '../views/SettingsComponent.vue'
 import JobsComponent from '../views/jobs/JobsComponent'
+import JobDetail from '../views/jobs/JobDetail.vue'
 
 const routes = [
     {
@@ -25,6 +26,12 @@ const routes = [
         path: '/jobs',
         name:'JobsComponent',
         component: JobsComponent,
+    },
+    {
+        path: '/jobs/:id',
+        name:'JobDetail',
+        component: JobDetail,
+        props: true,
     },
 ]
 
