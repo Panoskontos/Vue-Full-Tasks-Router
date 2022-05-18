@@ -1,9 +1,9 @@
 <template>
 
-<div>
-  <router-link to="/">Home</router-link>
+<div id="nav">
+  <router-link :to="{name:'HomeComponent'}">Home</router-link>
   &nbsp;&nbsp;
-  <router-link to="/users">Users</router-link>
+  <router-link :to="{name:'UsersComponent'}">Users</router-link>
   &nbsp;&nbsp;
   <router-link to="/settings">Settings</router-link>
 
@@ -132,6 +132,16 @@ export default {
 
 .red {
   color: crimson;
+}
+#nav a {
+  text-decoration: none;
+}
+
+#nav a.router-link-active{
+  color: white;
+  background: rgb(20, 83, 220);
+  padding: 5px 15px;
+  border-radius: 10px;
 }
 
 </style>
