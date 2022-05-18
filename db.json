@@ -8,7 +8,7 @@
     {
       "id": 2,
       "name": "working",
-      "reminder": false
+      "reminder": true
     },
     {
       "id": 3,

@@ -3,6 +3,8 @@
 <div id="nav">
   <router-link :to="{name:'HomeComponent'}">Home</router-link>
   &nbsp;&nbsp;
+  <router-link :to="{name:'JobsComponent'}">Jobs</router-link>
+  &nbsp;&nbsp;
   <router-link :to="{name:'UsersComponent'}">Users</router-link>
   &nbsp;&nbsp;
   <router-link to="/settings">Settings</router-link>
